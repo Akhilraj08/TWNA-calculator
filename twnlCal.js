@@ -58,12 +58,12 @@ const twnlStyle = {
 			  }
 
 			  @font-face {font-family: "Gotham Rounded";
-				src: url("//db.onlinewebfonts.com/t/d31d488d2171c1668c15962fc6cf1ef7.eot");
-				src: url("//db.onlinewebfonts.com/t/d31d488d2171c1668c15962fc6cf1ef7.eot?#iefix") format("embedded-opentype"),
-				url("//db.onlinewebfonts.com/t/d31d488d2171c1668c15962fc6cf1ef7.woff2") format("woff2"),
-				url("//db.onlinewebfonts.com/t/d31d488d2171c1668c15962fc6cf1ef7.woff") format("woff"),
-				url("//db.onlinewebfonts.com/t/d31d488d2171c1668c15962fc6cf1ef7.ttf") format("truetype"),
-				url("//db.onlinewebfonts.com/t/d31d488d2171c1668c15962fc6cf1ef7.svg#Gotham Rounded") format("svg");
+				src: url("https://db.onlinewebfonts.com/t/d31d488d2171c1668c15962fc6cf1ef7.eot");
+				src: url("https://db.onlinewebfonts.com/t/d31d488d2171c1668c15962fc6cf1ef7.eot?#iefix") format("embedded-opentype"),
+				url("https://db.onlinewebfonts.com/t/d31d488d2171c1668c15962fc6cf1ef7.woff2") format("woff2"),
+				url("https://db.onlinewebfonts.com/t/d31d488d2171c1668c15962fc6cf1ef7.woff") format("woff"),
+				url("https://db.onlinewebfonts.com/t/d31d488d2171c1668c15962fc6cf1ef7.ttf") format("truetype"),
+				url("https://db.onlinewebfonts.com/t/d31d488d2171c1668c15962fc6cf1ef7.svg#Gotham Rounded") format("svg");
 				}
 
 			@media only screen and (min-width: 768px){
@@ -72,6 +72,7 @@ const twnlStyle = {
 			
 			.twna-calculator {
 				position: relative;
+				padding-top: 60px;
 			}
 
 			.twna-calculator p {
@@ -151,14 +152,14 @@ const twnlStyle = {
 			.twna-calculator .slide-left{
 			    left: 35px !important;
 			    background: none !important;
-			    background-image: url("/assets/twnaCal/images/arrow-left.png") !important;
+			    background-image: url("images/arrow-left.png") !important;
 			    background-size: contain !important;
 			}
 
 			.twna-calculator .slide-right{
 			    right: 35px !important;
 			    background: none !important;
-			    background-image: url("/assets/twnaCal/images/arrow-right.png") !important;
+			    background-image: url("images/arrow-right.png") !important;
 			    background-size: contain !important;
 			}
 
@@ -381,7 +382,7 @@ const twnlStyle = {
 			    -webkit-appearance: none;
 			    -moz-appearance: none;
 			     appearance: none;
-			    background: url("/assets/twnaCal/images/arrow-down.png") #f8f8f8 no-repeat calc(100% - 10px)/20px !important;
+			    background: url("images/arrow-down.png") #f8f8f8 no-repeat calc(100% - 10px)/20px !important;
 			}
 
 			.twna-calculator .options-wrapper{
@@ -406,14 +407,14 @@ const twnlStyle = {
 			.twna-calculator .slick-prev{
 			    left: 35px !important;
 			    background: none !important;
-			    background-image: url("/assets/twnaCal/images/arrow-left.png") !important;
+			    background-image: url("images/arrow-left.png") !important;
 			    background-size: contain !important;
 			}
 
 			.twna-calculator .slick-next{
 			    right: 35px !important;
 			    background: none !important;
-			    background-image: url("/assets/twnaCal/images/arrow-right.png") !important;
+			    background-image: url("images/arrow-right.png") !important;
 			    background-size: contain !important;
 			}
 
@@ -641,7 +642,7 @@ const twnlStyle = {
 			        width: 407px;
 			        height: 71px;
 					margin: 30px;
-					background: url("/assets/twnaCal/images/arrow-down.png") #f8f8f8 no-repeat calc(100% - 30px)/30px !important;
+					background: url("images/arrow-down.png") #f8f8f8 no-repeat calc(100% - 30px)/30px !important;
 			    }
 
 			    .twna-calculator .sewa-options-wrapper div{
@@ -941,7 +942,7 @@ const twnlStyle = {
 			}
 
 			.twna-calculator .result_header{
-				background-image: url("/assets/twnaCal/images/background-banner.png");
+				background-image: url("images/background-banner.png");
 				background-size: 140% auto;
 			    background-repeat: no-repeat;
 			    background-position: center 0;
@@ -1027,7 +1028,7 @@ const twnlStyle = {
 			}
 			
 			.twna-calculator .result_content{
-				background-image: url("/assets/twnaCal/images/blue-background.png");
+				background-image: url("images/blue-background.png");
 				background-size: 100% 1220px;
 				background-repeat: no-repeat;
 				margin-top: 55px;
@@ -1041,7 +1042,7 @@ const twnlStyle = {
 			}
 
 			.twna-calculator .result_content_memilih {
-				background-image: url("/assets/twnaCal/images/blue-background.png");
+				background-image: url("images/blue-background.png");
 				background-position: center -1330px;
 				margin-top: 0;
 				background-size: 100% 1600px;
@@ -4011,15 +4012,15 @@ const twnlObj = {
 						optType: 'normal',
 						opt: [
 							{
-								img: '/assets/twnaCal/images/gendongan-1.jpg',
+								img: 'images/gendongan-1.jpg',
 								value: 250000
 							},
 							{
-								img: '/assets/twnaCal/images/gendongan-2.jpg',
+								img: 'images/gendongan-2.jpg',
 								value: 100000000
 							},
 							{
-								img: '/assets/twnaCal/images/gendongan-3.jpeg',
+								img: 'images/gendongan-3.jpeg',
 								value: 2000000
 							}
 						]
@@ -4061,15 +4062,15 @@ const twnlObj = {
 						optType: 'normal',
 						opt: [
 							{
-								img: '/assets/twnaCal/images/stroller-1.jpg',
+								img: 'images/stroller-1.jpg',
 								value: 1700000
 							},
 							{
-								img: '/assets/twnaCal/images/stroller-2.jpg',
+								img: 'images/stroller-2.jpg',
 								value: 6000000
 							},
 							{
-								img: '/assets/twnaCal/images/stroller-3.jpeg',
+								img: 'images/stroller-3.jpeg',
 								value: 20000000
 							}
 						]
@@ -4106,15 +4107,15 @@ const twnlObj = {
 				type: 'normal',
 				opt: [
 					{
-						img: '/assets/twnaCal/images/tas-bayi-1.jpg',
+						img: 'images/tas-bayi-1.jpg',
 						value: 300000
 					},
 					{
-						img: '/assets/twnaCal/images/tas-bayi-2.jpg',
+						img: 'images/tas-bayi-2.jpg',
 						value: 1000000
 					},
 					{
-						img: '/assets/twnaCal/images/tas-bayi-3.jpg',
+						img: 'images/tas-bayi-3.jpg',
 						value: 3000000
 					}
 				]
@@ -4126,15 +4127,15 @@ const twnlObj = {
 				type: 'normal',
 				opt: [
 					{
-						img: '/assets/twnaCal/images/mainan-bayi-1.jpg',
+						img: 'images/mainan-bayi-1.jpg',
 						value: 60000
 					},
 					{
-						img: '/assets/twnaCal/images/mainan-bayi-2.jpg',
+						img: 'images/mainan-bayi-2.jpg',
 						value: 300000
 					},
 					{
-						img: '/assets/twnaCal/images/mainan-bayi-3.jpg',
+						img: 'images/mainan-bayi-3.jpg',
 						value: 1000000
 					}
 				]
@@ -4146,15 +4147,15 @@ const twnlObj = {
 				type: 'normal',
 				opt: [
 					{
-						img: '/assets/twnaCal/images/car-seat-1.jpg',
+						img: 'images/car-seat-1.jpg',
 						value: 500000
 					},
 					{
-						img: '/assets/twnaCal/images/car-seat-2.jpg',
+						img: 'images/car-seat-2.jpg',
 						value: 800000
 					},
 					{
-						img: '/assets/twnaCal/images/car-seat-3.jpg',
+						img: 'images/car-seat-3.jpg',
 						value: 1700000
 					}
 				]
@@ -4166,15 +4167,15 @@ const twnlObj = {
 				type: 'normal',
 				opt: [
 					{
-						img: '/assets/twnaCal/images/teether-1.jpg',
+						img: 'images/teether-1.jpg',
 						value: 85000
 					},
 					{
-						img: '/assets/twnaCal/images/teether-2.jpg',
+						img: 'images/teether-2.jpg',
 						value: 100000
 					},
 					{
-						img: '/assets/twnaCal/images/teether-3.jpg',
+						img: 'images/teether-3.jpg',
 						value: 300000
 					}
 				]
@@ -5520,7 +5521,7 @@ const twnlResult = {
 					<div class="result_header">
 						<h1>Hasil Akhir Biaya Kebutuhan si Kecil</h1>
 						<div class="result-header-inner">
-							<img src="/assets/twnaCal/images/background-result-price.png" alt="background-result-price"/>
+							<img src="images/background-result-price.png" alt="background-result-price"/>
 
 							<div>
 								<span>Biaya yang dibutuhkan</span>
@@ -5685,12 +5686,12 @@ const twnlResult = {
 			
 				<div class="pdf-page" id="twnlResultPagePage2">
 					<div class="result_content">
-						<img src="/assets/twnaCal/images/ribbon-background.png" id="ribbon-banner" alt="ribbon-banner"/>
+						<img src="images/ribbon-background.png" id="ribbon-banner" alt="ribbon-banner"/>
 						<div class="expert_heading">
-							Expert Recommendation From <img src="/assets/twnaCal/images/jouska-logo.png" />
+							Expert Recommendation From <img src="images/jouska-logo.png" />
 						</div>
-						<img class="expert-recommendation" src="/assets/twnaCal/images/family-only.png" id="recommendation-family" alt="expert-recommendation"/>
-						<img class="expert-recommendation" src="/assets/twnaCal/images/blueboard-blank.png" id="recommendation" alt="expert-recommendation"/>
+						<img class="expert-recommendation" src="images/family-only.png" id="recommendation-family" alt="expert-recommendation"/>
+						<img class="expert-recommendation" src="images/blueboard-blank.png" id="recommendation" alt="expert-recommendation"/>
 						<div class="er_text">
 							<h4>
 								Sesuaikan Pengeluaran dengan kondisi finansial, yang penting cash flow aman.
@@ -5703,12 +5704,12 @@ const twnlResult = {
 						<button>Perhatikan hal-hal berikut<br/>dalam persiapan finansial si Kecil :</button>
 						<div class="financial_prep">
 							<div id="tips">
-								<img src="/assets/twnaCal/images/pertimbangan-menyewa-icon.png" alt="pertimbangan-menyewa-icon"/>
+								<img src="images/pertimbangan-menyewa-icon.png" alt="pertimbangan-menyewa-icon"/>
 								<h4>Pertimbangkan Menyewa/Meminjam</h4>
 								<span>*tips selalu perhatikan kebersihan alat yang disewa.</span>
 							</div>
 							<div>
-								<img src="/assets/twnaCal/images/menabung-tetap-utama-icon.png" alt="menabung-tetap-utama-icon"/>
+								<img src="images/menabung-tetap-utama-icon.png" alt="menabung-tetap-utama-icon"/>
 								<h4>Menabung Tetap Utama</h4>
 							</div>
 						</div>
@@ -5718,13 +5719,13 @@ const twnlResult = {
 				<div class="pdf-page" id="twnlResultPagePage3">
 					<div class="result_content_memilih">
 						<div class="illustration-text">Memilih Sekolah yang<br/>Tepat untuk si Kecil</div>
-						<img src="/assets/twnaCal/images/memilih-sekolah-illustration.png" id="illustration" alt="memilih-sekolah-illustration"/>
+						<img src="images/memilih-sekolah-illustration.png" id="illustration" alt="memilih-sekolah-illustration"/>
 					</div>
 					<div class="result_illustration">
 						<p>
 							Selain kebutuhan primer si Kecil, dana pendidikan merupakan hal yang harus dipersiapkan sedari dini. Dalam menentukan dana pendidikan, Mama dan Papa dapat mempertimbangkan kebutuhan si Kecil sesuai preferensi masing-masing.
 						</p>
-						<img src="/assets/twnaCal/images/tips-memilih-sekolah-illustration.png" alt="tips-memilih-sekolah-illustration"/>
+						<img src="images/tips-memilih-sekolah-illustration.png" alt="tips-memilih-sekolah-illustration"/>
 					</div>
 
 					<div class="notes-wrapper">
@@ -5747,19 +5748,19 @@ const twnlResult = {
 				<h4>Artikel Terkait</h4>
 				<div class="articles_list">
 					<div>
-						<img src="/assets/twnaCal/images/article-1.png" alt="article-1"/>
+						<img src="images/article-1.png" alt="article-1"/>
 						<p>Tahap Mengatur Jam Tidur si Kecil, Sesuai Usianya</p>
 					</div>
 					<div>
-						<img src="/assets/twnaCal/images/article-2.png" alt="article-2"/>
+						<img src="images/article-2.png" alt="article-2"/>
 						<p>Cara Merawat Si Kecil Usia 1 - 3 bulan</p>
 					</div>
 					<div>
-						<img src="/assets/twnaCal/images/article-3.png" alt="article-3"/>
+						<img src="images/article-3.png" alt="article-3"/>
 						<p>Mengenalkan Makanan Pendamping ASI Pada si Kecil</p>
 					</div>
 					<div>
-						<img src="/assets/twnaCal/images/article-4.png" alt="article-4"/>
+						<img src="images/article-4.png" alt="article-4"/>
 						<p>Peran ASI Untuk Imunitas si Kecil</p>
 					</div>
 				</div>
@@ -5853,7 +5854,7 @@ const twnlLanding = {
 			            <div class="powered-by">
 			                Powered by
 			            </div>
-			            <img src="/assets/twnaCal/images/jouska_logo.png" alt="jouska-logo" />
+			            <img src="images/jouska_logo.png" alt="jouska-logo" />
 			        </div>
 			        <p>
 			            Halo Mama dan Papa, yuk rencanakan semua kebutuhan untuk masa depan si Kecil mulai dari kebutuhan sehari-hari hingga perencanaan pendidikannya lengkap dengan perkiraan biaya, melalui Kalkulator Perencanaan Finansial si Kecil.
@@ -5867,7 +5868,7 @@ const twnlLanding = {
 			    </div>
 
 			    <div class="image-wrapper">
-			        <img src="/assets/twnaCal/images/illustration-1.png" alt="illustration" />
+			        <img src="images/illustration-1.png" alt="illustration" />
 			    </div>
 			</div>
 		`)
