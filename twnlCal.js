@@ -1980,6 +1980,126 @@ const twnlStyle = {
 				font-size: inherit !important;
 			}
 
+			/*loginpagebeforesignup*/
+			#twnlLoginBeforeResult{
+				height: auto;
+				display: flex;
+				flex-direction: column;
+			}
+
+			#twnlLoginBeforeResult .family-image{
+				width: 60%;
+				position: relative;
+				left: 50%;
+				transform: translate(-50%);
+				margin-top: 50px;
+			}
+
+			#twnlLoginBeforeResult .text-wrapper{
+				margin: auto 20px;
+			    text-align: center;
+			}
+
+			#twnlLoginBeforeResult .text-wrapper h1{
+				font-size: 35px;
+				margin: 40px 0;
+				font-family: Quicksand;
+			    font-weight: bold;
+			    line-height: 1;
+			    text-align: center;
+				color: #1b5793;
+			}
+
+			#twnlLoginBeforeResult .text-wrapper button{
+			    width: 260px;
+			    height: 50px;
+			    font-size: 18px;
+			    border-radius: 45.5px;
+			    background-color: #90b6e0;
+			    margin: 20px 0;
+			    border: none;
+			    color: white;
+				letter-spacing: 1px;
+				cursor: pointer;
+			}
+
+			#twnlLoginBeforeResult .text-wrapper p{
+				margin: 20px 0;
+				font-family: Quicksand;
+			    font-size: 18px;
+			    line-height: 1.25;
+			    text-align: center;
+			    color: #707070;
+			}
+
+			#twnlLoginBeforeResult .text-wrapper .login-wrapper{
+				color: #677b98;
+				margin-bottom: 40px;
+			}
+
+			#twnlLoginBeforeResult .text-wrapper .login-highlight{
+				font-weight: bold;
+				font-size: 20px;
+				cursor: pointer;
+			}
+
+			@media only screen and (min-width: 768px){
+				#twnlLoginBeforeResult{
+					height: 560px;
+					flex-direction: row;
+				}
+
+				#twnlLoginBeforeResult .family-image-wrapper{
+					flex-basis: 50%;
+				}
+
+				#twnlLoginBeforeResult .text-wrapper{
+					flex-basis: 50%;
+			        margin: auto;
+			        box-sizing: border-box;
+			        text-align: left;
+			        max-width: 470px;
+			    	margin-right: 0;
+				}
+
+				#twnlLoginBeforeResult .text-wrapper h1{
+					text-align: left;
+					font-size: 40px;
+					margin: 0.67em 0;
+				}
+
+				#twnlLoginBeforeResult .text-wrapper p{
+					line-height: 1.67;
+			        text-align: left;
+				}
+
+				#twnlLoginBeforeResult .text-wrapper button{
+					border-radius: 35px;
+					margin: 10px 0;
+				}
+
+				#twnlLoginBeforeResult .family-image{
+					width: 90%;
+					height: 350px;
+					top: 50%;
+					left: unset;
+					transform: translate(0,-50%);
+					margin-top: 0px;
+				}
+
+				#twnlLoginBeforeResult .text-wrapper .login-highlight{
+					font-weight: bold;
+					font-size: 20px;
+				}
+			}
+
+			@media only screen and (min-width: 1024px){
+				#twnlLoginBeforeResult .family-image{
+					width: 80%;
+					height: 400px;
+				}
+			}
+
 		`)
 	},
 
@@ -5875,12 +5995,41 @@ const twnlLanding = {
     }
 };
 
+const twnlLoginBeforeResult = {
+
+    render: function () {
+        
+		return (`
+			<div class="main container" id="twnlLoginBeforeResult">
+				<div class="family-image-wrapper">
+			        <img src="images/illustration-1.png" alt="illustration" class="family-image" />
+			    </div>
+				<div class="text-wrapper">
+			        <h1>
+			            Hello!
+			        </h1>
+			        <p>
+			            Terima kasih sudah mengikuti Kalkulator Perencanaan Finansial si Kecil
+			        </p>
+			       	<p>
+						Yuk, daftarkan diri Mama terlebih dahulu
+			       	</p>
+			        <button onclick="twnlMain.showResultPage()">
+			            Join Now
+			        </button>
+			        <p class="login-wrapper">Sudah memiliki akun? <span class="login-highlight">Login di sini</span></p>
+			    </div>
+			</div>
+		`)
+    }
+};
+
 const twnlMain = {
 
 	state: {
-		page: 0, //0: landing, 1: form, 2: result
+		page: 2, //0: landing, 1: form, 2: login , 3: result
 	 	landingPopup: false,
-	 	formStages: 1, 
+	 	formStages: 1,
 	 	total: {
 	 		twnlBabyClothesNeeds: 0, //formStages: 1
 		 	twnlKebutuhanAlatMandiBayi: 0, //formStages: 2
@@ -5915,6 +6064,11 @@ const twnlMain = {
 
     	this.render();
     	this.toTopFunction();
+    },
+
+    showResultPage: function(){
+    	this.state.page = 3;
+    	this.render();
     },
 
     nextFormStage: function() {
@@ -6061,6 +6215,7 @@ const twnlMain = {
     	if(isValidated == true) {
     		if(this.state.formStages == 12) {
     			this.state.page = 2;
+
     		} 
     		else {
     			this.state.formStages = this.state.formStages + 1;
@@ -6197,6 +6352,14 @@ const twnlMain = {
 			break;
 
 			case(2):
+				html = `
+					<section>
+						${ twnlLoginBeforeResult.render() }
+					</section>
+				`
+			break;
+
+			case(3):
 				html = `
 					<section>
 						${twnlResult.render({total: this.state.total})}
