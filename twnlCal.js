@@ -6027,7 +6027,7 @@ const twnlLoginBeforeResult = {
 const twnlMain = {
 
 	state: {
-		page: 2, //0: landing, 1: form, 2: login , 3: result
+		page: 0, //0: landing, 1: form, 2: login , 3: result
 	 	landingPopup: false,
 	 	formStages: 1,
 	 	total: {
